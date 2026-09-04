@@ -1,0 +1,198 @@
+:root {
+    --accent-green: #00e676;
+    --accent-green-hover: #00c853;
+    --bg-dark: #111111;
+    --card-bg: #1a1a1a;
+    --border-dark: #2a2a2a;
+}
+
+body {
+    background-color: var(--bg-dark);
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    padding-top: 75px;
+}
+
+/* Custom Dark Navbar Styling */
+.navbar {
+    background-color: rgba(17, 17, 17, 0.95) !important;
+    border-bottom: 1px solid var(--border-dark);
+}
+
+.navbar-brand span {
+    color: var(--accent-green);
+}
+
+.nav-link {
+    color: #cccccc !important;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: var(--accent-green) !important;
+}
+
+/* Neon Green Accents & Dark Buttons */
+.text-green {
+    color: var(--accent-green) !important;
+}
+
+.bg-green {
+    background-color: var(--accent-green) !important;
+}
+
+.btn-green {
+    background-color: var(--accent-green);
+    color: #000000;
+    font-weight: 700;
+    border: none;
+    padding: 10px 28px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.btn-green:hover {
+    background-color: var(--accent-green-hover);
+    color: #000000;
+    transform: translateY(-2px);
+}
+
+/* Section & Container Styling */
+section {
+    padding: 80px 0;
+}
+
+.section-title {
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 2rem;
+}
+
+/* Circular Hero Background Graphic */
+.image-circle-container {
+    position: relative;
+    display: inline-block;
+}
+
+.image-circle-bg {
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    width: 280px;
+    height: 280px;
+    background-color: var(--accent-green);
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.hero-person-img {
+    position: relative;
+    z-index: 2;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Custom Cards */
+.custom-card {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-dark);
+    border-radius: 8px;
+}
+
+/* Gallery Cards */
+.gallery-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-dark);
+    transition: transform 0.4s ease, border-color 0.4s ease, box-shadow 0.4s ease;
+    cursor: pointer;
+}
+
+.gallery-img-wrapper {
+    position: relative;
+    overflow: hidden;
+    height: 240px;
+}
+
+.gallery-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.gallery-card:hover {
+    transform: translateY(-8px);
+    border-color: var(--accent-green);
+    box-shadow: 0 10px 25px rgba(0, 230, 118, 0.25);
+}
+
+.gallery-card:hover .gallery-img-wrapper img {
+    transform: scale(1.1);
+}
+
+.gallery-card:hover .card-title {
+    color: var(--accent-green) !important;
+}
+
+/* Accordion Styling */
+.accordion-item {
+    background-color: var(--card-bg) !important;
+    border: 1px solid var(--border-dark) !important;
+    color: #ffffff;
+    margin-bottom: 12px;
+    border-radius: 6px !important;
+    overflow: hidden;
+}
+
+.accordion-button {
+    background-color: var(--card-bg) !important;
+    color: #ffffff !important;
+    font-weight: 700;
+    box-shadow: none !important;
+    transition: all 0.3s ease;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #222222 !important;
+    color: var(--accent-green) !important;
+    border-bottom: 1px solid var(--border-dark);
+}
+
+.accordion-button::after {
+    filter: invert(1);
+}
+
+/* Dark Alert Styling */
+.dark-alert {
+    background-color: var(--card-bg);
+    border: 1px solid var(--accent-green);
+    border-left: 5px solid var(--accent-green);
+    color: #ffffff;
+    border-radius: 8px;
+}
+
+/* Form Inputs Dark Mode Styling */
+.form-control {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-dark);
+    color: #ffffff;
+}
+
+.form-control:focus {
+    background-color: var(--card-bg);
+    border-color: var(--accent-green);
+    color: #ffffff;
+    box-shadow: 0 0 0 0.25rem rgba(0, 230, 118, 0.25);
+}
+
+#sml{
+    color: rgb(90, 90, 90);
+}
